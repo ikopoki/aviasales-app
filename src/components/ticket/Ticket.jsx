@@ -20,9 +20,9 @@ const FlightInfo = ({ segment }) => {
   return (
     <span>
       <span className={classes.opaci}>В пути</span>
-      <span>
+      <time>
         {Math.floor(segment.duration / 60)}ч {segment.duration % 60}мин
-      </span>
+      </time>
     </span>
   )
 }

@@ -15,12 +15,7 @@ function LoadingMessage({ message, type }) {
     <Alert
       message={message}
       type={type}
-      style={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginTop: '20px',
-        width: '500px',
-      }}
+      className='alert-app'
     />
   )
 }
@@ -32,7 +27,7 @@ export default function App() {
       <Header />
       {!stopSearch && (
         <>
-          <Spin size="large" style={{ margin: '0' }} />
+          <Spin size="large" className='spin-app' />
           <LoadingMessage message="Билеты подгружаются, но часть из них вы уже можете посмотреть!" type="warning" />
         </>
       )}

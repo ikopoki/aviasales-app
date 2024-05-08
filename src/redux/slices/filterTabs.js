@@ -35,6 +35,12 @@ const filterTabs = createSlice({
             check: checkbox.name === 'all' ? allChecked : allChecked,
           }))
         }
+        if(state[0].check) {
+          return state.map((checkbox) => ({
+            ...checkbox,
+            check: !checkbox.check
+          }))
+        }
       } else {
         const newState = state.map((checkbox) =>
           checkbox.name === action.payload ? { ...checkbox, check: !checkbox.check } : checkbox

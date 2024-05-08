@@ -15,7 +15,6 @@ export const getId = createAsyncThunk('tickets/fetchTickets', async () => {
 
 const fetchTickets = createAsyncThunk('ticketsData/fetchTickets', async (searchId) => {
     try {
-        console.log(searchId)
         const result = await axios.get(`https://aviasales-test-api.kata.academy/tickets?searchId=${searchId}`)
         return result.data
     } catch (err) {

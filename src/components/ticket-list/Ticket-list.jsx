@@ -59,7 +59,7 @@ export default function TicketsList() {
         </button>
       ) : (
         <Alert
-          style={{ marginLeft: 'auto', marginRight: 'auto', width: '500px' }}
+          className={classes['alert-ticket-list']}
           message="К сожалению, рейсы не найдены, попробуйте выбрать другие фильтры!"
           type="warning"
         />

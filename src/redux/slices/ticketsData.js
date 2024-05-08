@@ -43,7 +43,6 @@ const ticketsData = createSlice({
             .addCase(getId.fulfilled, (state,action) => {
                 state.isLoad = true
                 state.searchId = action.payload
-                console.log(action.payload)
             })
             .addCase(getId.rejected, (state, action) => {
                 state.isLoad = false
