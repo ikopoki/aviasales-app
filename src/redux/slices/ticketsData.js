@@ -1,8 +1,5 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable import/no-extraneous-dependencies */
-
-// It`s like todoData but.... tickets...
-
 import { createSlice } from "@reduxjs/toolkit"; 
 import fetchTickets, { getId } from "../../services/getTickets";
 
