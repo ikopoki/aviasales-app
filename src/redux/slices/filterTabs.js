@@ -11,17 +11,6 @@ const initialState = [
   { name: 'twoTransfers', check: false },
   { name: 'threeTransfers', check: false },
 ]
-/*
-
-I did it??
-
-Wait...
-
-I actually did it!!
-
-!!THANK  YOU DEBBUGER
-
-*/
 const filterTabs = createSlice({
   name: 'filterTabs',
   initialState,
